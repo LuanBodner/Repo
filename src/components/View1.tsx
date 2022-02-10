@@ -1,12 +1,11 @@
-import { View1Props } from 'props/View1Props';
 import React from 'react';
 
-export function View1(props: View1Props) {
-  const { displayText } = { ...props };
+export function View1() {
   return (
-    <div style={{ backgroundColor: 'red' }}>
-      {displayText}
-      {props.children}
+    <div
+      style={{ backgroundColor: 'red', height: '500px', marginTop: ' 150px' }}
+    >
+      Componente React 1
     </div>
   );
 }
